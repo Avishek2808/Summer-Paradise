@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Campement">
+		<meta name="keywords" content="do it yourself, do it yoself, DIY">
+		<meta name="author" content="Jewootah Urvashee">
+		<title>Summer Paradise! | Welcome </title>
+		<link rel="shortcut icon" type="image/png" href="icons/beach.png">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Poppins' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="./css/font-awesome.min.css">
+		<script src="jquery-3.3.1.js"> </script>
+	</head>
+	<header>
+		<artical id="banner">
+			<h1> <a href="index.xml"> Summer Paradise </a> </h1>
+		</artical>
+	</header>
+	<body>
+	<section id='contactus'>
+		<div class="mail">
+			<a href="mailto:yoshitajewootah.com"><i class="fa fa-envelope-o"></i> <br>
+			 yoshitajewootah@gmail.com </a>
+		</div>
+		<div class="phone">
+			<a href=# ><i class= "fa fa-mobile-phone"></i> <br>
+			 (+230) 5794 7229 </a>
+		</div>
+		<div class="fb"> 
+			<a href="http://www.facebook.com" ><i class="fa fa-facebook-square"></i> <br>
+			click here to connect with us on facebook. </a>
+		</div>
+		
+		<div id="available">
+			<button class="btnrent" type='button' onclick="loadDoc()">Click here for taxi services.</button>
+		</div>
+		
+		<table id="price" align="center"></table>
+	</section>
+	<script>
+		function loadDoc() {
+			
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (xhttp.readyState == 4 && xhttp.status == 200) {
+					myFunction(xhttp);
+				} 
+			}
+			xhttp.open("GET", "taxi.xml", true);
+			xhttp.send();
+		}
+		function myFunction(xml) {
+			var i;
+			var xmlDoc = xml.responseXML;
+			var table="<tr><th>Name</th><th>Phone number</th></tr>";
+			var x = xmlDoc.getElementsByTagName("driver");
+			for (i = 0; i<x.length; i++) {
+				table += "<tr><td>" + x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+				"</td><td>" +
+				x[i].getElementsByTagName("number")[0].childNodes[0].nodeValue + "</td></tr>";
+			}
+			document.getElementById("price").innerHTML = table;
+		}
+	</script>
+	</body>
+</head>

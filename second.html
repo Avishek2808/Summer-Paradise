@@ -1,0 +1,77 @@
+.<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Campement">
+		<meta name="keywords" content="do it yourself, do it yoself, DIY">
+		<meta name="author" content="Jewootah Urvashee">
+		<title>Summer Paradise! | Appartment </title>
+		<link rel="shortcut icon" type="image/png" href="icons/beach.png">
+		<link rel="stylesheet" href="css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Poppins' rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="./css/font-awesome.min.css">
+		<script src="jquery-3.3.1.js"> </script>
+		
+	</head>
+	
+	<header>
+		<artical id="banner">
+			<h1> <a href="index.html"> Summer Paradise </a> </h1>
+		</artical>
+	</header>
+	<body>
+	<section id="details">
+		<div id="mslides">
+			<img class="mySlides" src="images/deuxieme.jpg" style="width:100%">
+			<img class="mySlides" src="images/deuxieme1.jpg" style="width:100%">
+			<img class="mySlides" src="images/deuxieme2.jpg" style="width:100%">
+	  
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		
+		<div id="written">
+			<p>
+				Residence: Superwoman <br>
+				Address: Coconut lane, Flic en Flac. <br>
+				Appartment no:9 <br>
+				Rooms: 2 <br>
+				Kitchen: 1 <br>
+				Bathrooms: 2 <br>
+				Living room: 1 <br>
+				Swimming pool: Common swimming pool <br>
+				Other facilities: WiFi, Television <br>
+				Distance from the beach: 7 minutes. <br>
+			</p>
+			
+			<div id="rent">
+				<button class="btnrent" type='button' onclick="window.location.href='form.html'">Book Now!</button>
+			</div>
+		</div>
+		
+	</section>
+	
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusSlides(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+	</script>
+	</body>
+</html>

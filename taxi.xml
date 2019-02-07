@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<taxi xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="taxi.xsd">
+	
+	<driver>
+		<name> John Doe </name>
+		<number>5557410</number>
+	</driver>
+	<driver>
+		<name> Jane Doe </name>
+		<number>0258963</number>
+	</driver>
+	
+</taxi>

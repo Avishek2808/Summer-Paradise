@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="clickbait.xsl"?>
+<homepage xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="clickbait.xsd">
+	<clickbait>
+	  <thumbnail>images\premier.jpg</thumbnail>
+	  <link>trial.php</link>
+	</clickbait>
+
+	<clickbait>
+		<thumbnail>images\deuxieme.jpg</thumbnail>
+		<link>second.html</link>
+	</clickbait>
+	
+	<clickbait>
+		<thumbnail>images\troisieme.jpg</thumbnail>
+		<link>third.html</link>
+	</clickbait>
+</homepage>

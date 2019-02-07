@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clients>
+  <client>
+    <fullName>tests</fullName>
+    <nic>ftghjkjgf</nic>
+    <state>cali</state>
+    <country>fornia</country>
+    <password>uyhjl;lk</password>
+    <phone>74128963</phone>
+    <email>yo@gmail.com</email>
+  </client>
+<client>
+	<fullName>suresh</fullName>
+	<nic>oresfdhjuiythfbjnkm</nic>
+	<state>yale</state>
+	<country>yalee</country>
+	<password>suresg</password>
+	<phone>8520144</phone>
+	<email>suresh@gmail.com</email>
+	</client>
+<client>
+	<fullName>suresh</fullName>
+	<nic>S021062280016S</nic>
+	<state>new york</state>
+	<country>usa</country>
+	<password>suresh</password>
+	<phone>52598688</phone>
+	<email>suresh@gmail.com</email>
+	</client>
+<client>
+	<fullName>papa</fullName>
+	<nic>papa</nic>
+	<state>papa</state>
+	<country>papa</country>
+	<password>papa</password>
+	<phone>2587</phone>
+	<email>suresh@gmail.com</email>
+</client>
+<client>
+	<fullName>yo</fullName>
+	<nic>y091298280016D</nic>
+	<state>miami</state>
+	<country>usa</country>
+	<password>yo</password>
+	<phone>7894205</phone>
+	<email>yo@gmail.com</email>
+	</client>
+<client><fullName>gael</fullName><nic>gael</nic><state>california</state><country>usa</country><password>gael</password><phone>666</phone><email>gael@nation.com</email></client><client><fullName>yusra</fullName><nic>yusra</nic><state>texas</state><country>usa</country><password>yusra</password><phone>6969</phone><email>yusra@zolifii.com</email></client></clients>

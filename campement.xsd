@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="summerp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="campment" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="residence"/>
+              <xs:element type="xs:string" name="address"/>
+              <xs:element type="xs:integer" name="appartmentNo"/>
+              <xs:element type="xs:integer" name="room"/>
+              <xs:element type="xs:integer" name="kitchen"/>
+              <xs:element type="xs:integer" name="bathroom"/>
+              <xs:element type="xs:integer" name="livingRoom"/>
+              <xs:element type="xs:string" name="pool"/>
+              <xs:element type="xs:string" name="facilities"/>
+              <xs:element type="xs:string" name="beach"/>
+              <xs:element type="xs:string" name="image" maxOccurs="unbounded" minOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute type="xs:integer" name="id"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

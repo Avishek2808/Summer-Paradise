@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="camp.xsl"?>
+<summerp xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="campement.xsd">
+
+	<campment id="1">
+		<residence>Wonderwoman</residence>
+		<address>Coconut lane, Flic en Flac.</address>
+		<appartmentNo>6</appartmentNo>
+		<room>3</room>
+		<kitchen>1</kitchen>
+		<bathroom>2</bathroom>
+		<livingRoom>1</livingRoom>
+		<pool>Common Swimming Pool</pool>
+		<facilities>WiFi, Television</facilities>
+		<beach>5 minutes.</beach>
+		<image>images/premier.jpg</image>
+	</campment>
+	
+	<campment id="2">
+		<residence>Superwoman</residence>
+		<address>Coconut lane, Flic en Flac.</address>
+		<appartmentNo>9</appartmentNo>
+		<room>2</room>
+		<kitchen>1</kitchen>
+		<bathroom>2</bathroom>
+		<livingRoom>1</livingRoom>
+		<pool>Common Swimming Pool</pool>
+		<facilities>WiFi, Television </facilities>
+		<beach>7 minutes.</beach>
+		<slides>
+			<image>deuxieme.jpg</image>
+		</slides>
+	</campment>
+	
+	<campment id="3">
+		<residence>Lady Gaga</residence>
+		<address>Coconut lane, Flic en Flac, Mauritius.</address>
+		<appartmentNo>7</appartmentNo>
+		<room>3</room>
+		<kitchen>1</kitchen>
+		<bathroom>2</bathroom>
+		<livingRoom>1</livingRoom>
+		<pool>Common Swimming Pool</pool>
+		<facilities>WiFi, Television</facilities>
+		<beach>5 minutes.</beach>
+		<slides>
+			<image>images/troisieme.jpg</image>
+		</slides>
+	</campment> 
+</summerp>
